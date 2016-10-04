@@ -1,15 +1,18 @@
 body{
-  margin: 0auto;
+  margin: 0 auto;
   max-width: 50em;
   display: inline-block;
   font-family: "Verdana", sans-serif;
   line-height: 1.5;
   padding:15px;
-  background-color: #e5fcfb
+  background-image: url("fond.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color : #191970;
 }
 
 h1{
   padding:5px;
   line-height: normal;
-  text-align: center;
+  border-style: solid;
 }
