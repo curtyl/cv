@@ -1,19 +1,24 @@
 //requires
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var contact = require('gulp-contact');
-var browerSync = require('brower-sync').create();
-
+var concat = require('gulp-concat');
+var browserSync = require('browser-sync').create();
+var autoprefixer = require('gulp-autoprefixer');
 
 //tasks
 gulp.task('sass', function(){
   return gulp.src('assets/scss/**/*.scss')
-    .pire(sass())
-    .pipe(contact('style.css'))
-    .pipe(gulp.dest('assets/css/'))
+    .pipe(sass())
     .pipe(browserSync.reload({
       stream: true
     }))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(concat('style.css'))
+    .pipe(gulp.dest('assets/css/'))
+
 })
 
 gulp.task('watch', function(){
@@ -25,7 +30,7 @@ gulp.task('watch', function(){
 gulp.task('browserSync', ['browserSync' , 'sass'], function(){
   browserSync.init({
     server: {
-      baseDir; 'cv'
+      baseDir: 'cv'
     },
   })
 })
