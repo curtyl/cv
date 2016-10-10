@@ -1,0 +1,30 @@
+body {
+  font: 100% "Verdana", sans-serif;
+  color: #191970;
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 1.5;
+  padding: 15px; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+ul.topnav {
+  list-style: none;
+  overflow: hidden; }
+
+li a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none; }
+
+li a:hover {
+  background-color: #555;
+  color: white; }
+
+h1 {
+  padding: 5px;
+  line-height: normal;
+  border-style: solid;
+  text-align: center; }
