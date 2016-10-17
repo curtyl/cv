@@ -1,0 +1,57 @@
+@import '../config/parameters';
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &.topnav{
+    width:100%;
+    overflow: hidden;
+    display: block;
+  }
+}
+
+li{
+  text-align: center;
+  position :relative;
+
+  a{
+    padding: $padding;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+      background-color: white;
+      color: #333;
+    }
+  }
+}
+
+.Dropdown{
+  cursor : pointer;
+  text-align: center;
+  background-color: $text-color;
+  color: white;
+  width:100%;
+
+  &:hover{
+    background-color: #3B3BCB;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+  }
+
+  .Dropdown-menu{
+    display: none;
+  }
+
+  &.is-expanded nav{
+    display: block;
+    width: 100%;
+  }
+}
