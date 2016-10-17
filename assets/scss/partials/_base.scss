@@ -1,0 +1,14 @@
+@import '../config/parameters';
+
+body{
+  font: 100% $font-stack;
+  color: $text-color;
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 1.5;
+  padding: 15px;
+}
+
+.container{
+  width:100%;
+}
