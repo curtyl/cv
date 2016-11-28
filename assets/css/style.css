@@ -125,7 +125,6 @@
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
   filter: none; }
 
 .fa-stack {
@@ -2210,6 +2209,19 @@ h1 {
   background-color: #191970;
   color: #dcdeef; }
 
+@media screen and (min-width: 426px) {
+  .StatutT {
+    width: 20%;
+    display: inline-block;
+    margin: 0; }
+  .statut {
+    width: 79%;
+    display: inline-block;
+    margin: 0;
+    color: white;
+    background-color: #191970;
+    text-align: center; } }
+
 .fixed {
   position: fixed;
   top: 0;
@@ -2230,10 +2242,6 @@ li {
     width: 100%;
     color: white;
     text-decoration: none; }
-  li:hover {
-    background-color: white; }
-    li:hover a {
-      color: #191970; }
 
 .Dropdown {
   cursor: pointer;
@@ -2256,10 +2264,22 @@ li {
 .nav-item {
   border-bottom: solid white 0.5px;
   padding-top: 5px; }
+  .nav-item:hover {
+    background-color: white; }
+    .nav-item:hover a {
+      color: #191970; }
 
-@media screen and (min-width: 425px) {
-  .Dropdown-menu {
-    display: inline-block; }
+@media screen and (min-width: 426px) {
+  .Dropdown .Dropdown-menu {
+    display: inline-block;
+    text-align: center; }
+  .nav-item {
+    border-bottom: none;
+    padding-top: 0;
+    float: left;
+    border-right: solid white; }
+  #contact {
+    border-right: none; }
   .button {
     display: none; }
   #list {
