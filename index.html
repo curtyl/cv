@@ -34,9 +34,13 @@
 			</header>
 			<div>
 				<h1>Situation Professionnelle</h1>
-				<h2>Statut</h2>
-				<p> : En recherche de stage</p>
-				<p>Pourquoi cette recherche de stage ? --> adev LM</p>
+				<h2 class="StatutT">Statut :</h2>
+				<p class="statut"> En recherche de stage</p>
+				<p>Je suis un étudiant diplômé d'un DUT Informatique, en Licence Professionnelle SMIN (Services Mobiles et Interface Nomade)
+					 à Grenoble et je suis actuellement en recherche d'une entreprise pouvant m'accueillir pour un stage d'un durée de 14 semaines
+					 à partir du 2 Janvier. Ce stage est particulier puisqu'il y a des alternants dans ma Licence, il faut donc alterner période
+				 	 de stage et période de cours au même rythme qu'un alternant. J'ai acquis au cours de ma formation, de solides connaissances en C++,
+					 Java, HTML, CSS et Javascript notamment grâce aux projets de groupe que j'ai réalisés durant mon DUT.</p>
 			</div>
 			<div>
 				<h1>Formations</h1>
@@ -80,22 +84,23 @@
 					</p>
 			</div>
 			<div>
-				<h1>Contact</h1>
-				<form>
-					<input type="text" name ="nom" value="Votre nom"><br>
-					<input type="text" name="email" value="Votre email"><br>
-					<input type="text" name="subject" value="Objet"><br>
-					<input type="text" name="message" value="Votre message"><br>
-					<input type="submit" value ="Envoyer">
+				<h1>Formulaire de contact</h1>
+				<form method="post" action="">
+						<input class="Field" type="text" name ="nom" value="Votre nom*" id="nom" required><br>
+						<input class="Field" type="text" name="email" value="Votre email*" id="email" required><br>
+						<input class="Field" type="text" name="sujet" value="L'Objet" id="sujet"><br>
+						<textarea class="Field" name="message" rows="5" cols="20" id="message">Votre message</textarea><br>
+						<input type="submit" value ="Envoyer">
+						<p>Les champs possèdant une "*" sont obligatoires</p>
 				</form>
 			</div>
-			<footer>
-				<div>
-					<p>CV-WEB|Louis CURTY|2016</p>
-				</div>
-			</footer>
 		</div>
 		<script src="assets/lib/jquery/dist/jquery.min.js"></script>
 		<script src="assets/js/main.js"></script>
 	</body>
+	<footer>
+		<div>
+			<p>CV-WEB | Louis CURTY | 2016</p>
+		</div>
+	</footer>
 </html>
