@@ -50,3 +50,20 @@ h1{
   background-color: $text-color;
   color: $bg-color;
 }
+
+@media screen and (min-width: 426px) {
+  .StatutT{
+    width: 20%;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .statut{
+    width: 79%;
+    display: inline-block;
+    margin: 0;
+    color: white;
+    background-color: $text-color;
+    text-align: center;
+  }
+}
