@@ -15,9 +15,11 @@ body{
 }
 
 h1{
-  border-style: solid;
   text-align: center;
+  border-top: solid $text-color;
   font-size: 25px;
+  padding-top: 30px;
+
 
     &.title{
       border: none;
@@ -42,4 +44,9 @@ h1{
 
 .Field{
   width: 100%;
+}
+
+.submit{
+  background-color: $text-color;
+  color: $bg-color;
 }

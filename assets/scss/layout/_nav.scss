@@ -1,5 +1,11 @@
 @import '../config/parameters';
 
+.fixed{
+  position: fixed;
+  top: 0;
+  left:0;
+}
+
 ul{
   margin: 0;
   padding: 0;
@@ -7,25 +13,25 @@ ul{
 
   &.topnav{
     width:100%;
-    overflow: hidden;
     display: block;
   }
 }
 
 li{
   text-align: center;
-  position :relative;
 
   a{
     padding: $padding;
     width: 100%;
     color: white;
     text-decoration: none;
+  }
 
-    &:hover{
-      background-color: white;
-      color: #333;
+  &:hover{
+    a{
+      color: $text-color;
     }
+    background-color: white;
   }
 }
 
@@ -54,4 +60,29 @@ li{
     display: block;
     width: 100%;
   }
+}
+
+.nav-item{
+  border-bottom: solid white 0.5px;
+  padding-top: 5px;
+}
+
+
+
+@media screen and (min-width: 425px) {
+  .Dropdown-menu{
+    display: inline-block;
+  }
+
+  .button{
+    display: none;
+  }
+
+  #list{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
 }
