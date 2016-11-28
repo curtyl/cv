@@ -9,11 +9,10 @@ Création d'un site web où j'expose mon CV.
 ```
 npm install
 ```
-* Vous pouvez exécuter la commande :
+* Puis exécuter la commande :
 ```
-npm install -g bower
+npm install -g gulp
 ```
-si vous désirez utilisez d'autre package.
 
 Ensuite une fois cela fait vous pouvez coder si vous le souhaitez. Mais pour appliquer une ou des modifications que vous aurez effectuez dans les fichiers .scss, il faut :
 * Exécuter la commande :
