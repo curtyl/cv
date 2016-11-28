@@ -12,21 +12,21 @@
 			<header>
 				<h1 class="title">Website CV de Louis Curty</h1>
 				<div class="Dropdown">
-					<i class="fa fa-list fa-fw" aria-hidden="true"></i>
+					<i id="list" class="fa fa-list fa-fw" aria-hidden="true"></i>
 					<a href="#" class="button">Menu</a>
 					<nav class="Dropdown-menu">
 						<ul class="topnav">
 							<li class="nav-item">
-								<a href="#">Formations</a>
+								<a class="formations" href="#">Formations</a>
 							</li>
 							<li class="nav-item">
-								<a href="#">Expériences Professionnelles</a>
+								<a class="ep" href="#">Expériences Professionnelles</a>
 							</li>
 							<li class="nav-item">
-								<a href="#">Profil</a>
+								<a class="profil"href="#">Profil</a>
 							</li>
 							<li class="nav-item">
-								<a href="#">Contact</a>
+								<a class="contact"href="#">Contact</a>
 							</li>
 						</ul>
 					</nav>
@@ -43,7 +43,7 @@
 					 Java, HTML, CSS et Javascript notamment grâce aux projets de groupe que j'ai réalisés durant mon DUT.</p>
 			</div>
 			<div>
-				<h1>Formations</h1>
+				<h1 id="Formations">Formations</h1>
 				<ul>
 					<li><h4>Licence Informatique</h4>
 						<p>2016 - 2017 : Licence Professionnelle en informatique spécialisée dans le Service Mobile et Interface Nomade, 38000 Grenoble</p></li>
@@ -55,7 +55,7 @@
 				</ul>
 			</div>
 			<div>
-				<h1>Expériences Professionnelles</h1>
+				<h1 id="ep">Expériences Professionnelles</h1>
 				<ul>
 					<li><h4>CGI Grenoble - Stage pour obtention DUT Informatique - 2016 (3 mois)</h4>
 						<p>Projet confidentiel, avec développement/maintenance (asp.net et VB) et migration de serveur.</p></li>
@@ -71,7 +71,7 @@
 				</ul>
 			</div>
 			<div>
-				<h1>Profil</h1>
+				<h1 id="profil">Profil</h1>
 				<h3>Professionnel</h3>
 					<p>
 						Le travail de groupe est une de mes principales qualités : j'apporte beaucoup d'importance au travail de groupe et j'arrive
@@ -84,7 +84,7 @@
 					</p>
 			</div>
 			<div>
-				<h1>Formulaire de contact</h1>
+				<h1 id="contact">Formulaire de contact</h1>
 				<form method="post" action="">
 						<input class="Field" type="text" name ="nom" value="Votre nom*" id="nom" required><br>
 						<input class="Field" type="text" name="email" value="Votre email*" id="email" required><br>
