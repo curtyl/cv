@@ -2175,16 +2175,17 @@ body {
   margin: auto;
   height: auto;
   text-align: justify;
-  background: #FFFFE3; }
+  background: #dcdeef; }
 
 .container {
   display: block;
   margin: 10px; }
 
 h1 {
-  border-style: solid;
   text-align: center;
-  font-size: 25px; }
+  border-top: solid #191970;
+  font-size: 25px;
+  padding-top: 30px; }
   h1.title {
     border: none;
     padding: 0; }
@@ -2205,18 +2206,25 @@ h1 {
 .Field {
   width: 100%; }
 
+.submit {
+  background-color: #191970;
+  color: #dcdeef; }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0; }
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none; }
   ul.topnav {
     width: 100%;
-    overflow: hidden;
     display: block; }
 
 li {
-  text-align: center;
-  position: relative; }
+  text-align: center; }
   li a {
     padding: 8px 16px;
     width: 100%;
@@ -2244,6 +2252,18 @@ li {
   .Dropdown.is-expanded nav {
     display: block;
     width: 100%; }
+
+.nav-item {
+  border-bottom: solid white 0.5px;
+  padding-top: 5px; }
+
+@media screen and (min-width: 425px) {
+  .Dropdown-menu {
+    display: inline-block; }
+  .button {
+    display: none; }
+  #list {
+    display: none; } }
 
 footer {
   text-align: center;

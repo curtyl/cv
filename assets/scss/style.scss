@@ -1,3 +1,9 @@
+$fa-font-path: "../lib/font-awesome/fonts/";
+@import "../lib/font-awesome/scss/font-awesome";
+
 @import 'config/parameters';
-@import 'layout/nav';
+
 @import 'partials/base';
+
+@import 'layout/nav';
+@import 'layout/footer';
